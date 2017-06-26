@@ -1,0 +1,18 @@
+#%RAML 0.8
+baseUri: https://mocksvc.mulesoft.com/mocks/82154395-4cda-48bd-b3e3-83bcc0247be9
+title: test-SSL-API
+version: 1
+protocols: [HTTPS]
+
+
+/test:
+  get:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: |
+              {
+                "code": 210,
+                "message": "successful responses"
+              }
